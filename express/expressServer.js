@@ -19,14 +19,14 @@ pool.connect();
 //     res.send('Hello world')
 // //})
 
-app.get('/dnd/class', (req, res)=>{
+app.get('/api/dnd/class', (req, res)=>{
     pool.query('SELECT * FROM class').then((result) =>{
     console.log(result.rows)
     res.send(result.rows)
 })
 })
 
-app.post('/dnd/class/:id', (req,res) =>{
+app.post('/api/dnd/class/:id', (req,res) =>{
     console.log(req.params.id)
     console.log(req.body)
     res.send(req.body)
