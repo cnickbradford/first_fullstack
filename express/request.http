@@ -1,0 +1,5 @@
+### test route for server 
+GET http://localhost:5000/
+
+### route for getting all classes 
+GET http://localhost:5000/dnd/class
